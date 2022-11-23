@@ -6,10 +6,8 @@ import {DashboardComponent} from "./components/dashboard/dashboard.component";
 import {WaterSensorComponent} from "./components/sensors/water-sensor/water-sensor.component";
 import {MotionSensorComponent} from "./components/sensors/motion-sensor/motion-sensor.component";
 import {SoundSensorComponent} from "./components/sensors/sound-sensor/sound-sensor.component";
-import {
-  HumidityAndTemperatureSensorComponent
-} from "./components/sensors/humidity-and-temperature-sensor/humidity-and-temperature-sensor.component";
-import {AirQualitySensorComponent} from "./components/sensors/air-quality-sensor/air-quality-sensor.component";
+import {HumiditySensorComponent} from "./components/sensors/humidity-sensor/humidity-sensor.component";
+import {TemperatureSensorComponent} from "./components/sensors/temperature-sensor/temperature-sensor.component";
 
 const routes: Routes = [
   {
@@ -42,12 +40,12 @@ const routes: Routes = [
     component: SoundSensorComponent
   },
   {
-    path: "dashboard/temperature-and-humidity-sensor",
-    component: HumidityAndTemperatureSensorComponent
+    path: "dashboard/temperature-sensor",
+    component: TemperatureSensorComponent
   },
   {
-    path: "dashboard/air-quality-sensor",
-    component: AirQualitySensorComponent
+    path: "dashboard/humidity-sensor",
+    component: HumiditySensorComponent
   },
 ];
 

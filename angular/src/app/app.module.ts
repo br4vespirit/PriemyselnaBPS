@@ -13,8 +13,8 @@ import {MatCardModule} from "@angular/material/card";
 import { WaterSensorComponent } from './components/sensors/water-sensor/water-sensor.component';
 import { MotionSensorComponent } from './components/sensors/motion-sensor/motion-sensor.component';
 import { SoundSensorComponent } from './components/sensors/sound-sensor/sound-sensor.component';
-import { HumidityAndTemperatureSensorComponent } from './components/sensors/humidity-and-temperature-sensor/humidity-and-temperature-sensor.component';
-import { AirQualitySensorComponent } from './components/sensors/air-quality-sensor/air-quality-sensor.component';
+import { TemperatureSensorComponent } from './components/sensors/temperature-sensor/temperature-sensor.component';
+import { HumiditySensorComponent } from './components/sensors/humidity-sensor/humidity-sensor.component';
 
 @NgModule({
   declarations: [
@@ -26,8 +26,8 @@ import { AirQualitySensorComponent } from './components/sensors/air-quality-sens
     WaterSensorComponent,
     MotionSensorComponent,
     SoundSensorComponent,
-    HumidityAndTemperatureSensorComponent,
-    AirQualitySensorComponent
+    TemperatureSensorComponent,
+    HumiditySensorComponent
   ],
   imports: [
     BrowserModule,

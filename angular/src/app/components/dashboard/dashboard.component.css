@@ -15,7 +15,7 @@ html, body {
 
 .cards-line-1 {
   display: flex;
-  margin-bottom: 20%;
+  margin-bottom: 15%;
 }
 .cards-line-2 {
   display: flex;
@@ -23,7 +23,7 @@ html, body {
 }
 
 .dashboard-card {
-  margin-left: 5%;
+  margin-left: 7%;
   width: 28%;
 
   box-shadow: 0 0 10px 0 black,
@@ -47,11 +47,11 @@ html, body {
 }
 
 .info-card {
-  width: 50%;
+  width: 60%;
 }
 
 .buttons {
-  width: 50%;
+  width: 40%;
   align-items: center;
 }
 
@@ -72,7 +72,7 @@ html, body {
   margin-top: 25%;
 }
 .card-spacer {
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 .vertical-chain {
