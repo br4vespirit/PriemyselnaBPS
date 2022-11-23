@@ -1,1 +1,59 @@
-<p>dashboard works!</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<app-navbar></app-navbar>
+<div class="app-background">
+  <div class="info-card">
+    <div class="card-spacer"></div>
+    <div class="cards-line-1">
+      <mat-card class="dashboard-card" routerLink="water-sensor">
+        <mat-card-title class="dashboard-card-title">Water Level Sensor</mat-card-title>
+        <mat-card-content class="dashboard-card-content">
+          Watch the water level in your pet's bowl
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="dashboard-card" routerLink="motion-sensor">
+        <mat-card-title class="dashboard-card-title">Motion Sensor</mat-card-title>
+        <mat-card-content class="dashboard-card-content">
+          Monitor the number of movements that were made with the motion sensor
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="dashboard-card" routerLink="sound-sensor">
+        <mat-card-title class="dashboard-card-title">Sound Sensor</mat-card-title>
+        <mat-card-content class="dashboard-card-content">
+          Observe the number of sounds collected by the sound sensor
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="cards-line-2">
+      <mat-card class="dashboard-card" color="accent" routerLink="temperature-and-humidity-sensor">
+        <mat-card-title class="dashboard-card-title">Humidity and Temperature Sensor</mat-card-title>
+        <mat-card-content class="dashboard-card-content">
+          Monitor humidity and temperature with this sensor
+        </mat-card-content>
+      </mat-card>
+
+      <mat-card class="dashboard-card" routerLink="air-quality-sensor">
+        <mat-card-title class="dashboard-card-title">Air Quality Sensor</mat-card-title>
+        <mat-card-content class="dashboard-card-content">
+          Monitor air quality with this sensor
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <div class="buttons">
+    <div class="spacer"></div>
+    <a mat-raised-button color="accent" class="chain-button" routerLink="/home">Home page</a>
+    <hr class="vertical-chain">
+    <a mat-raised-button color="primary" class="chain-button" routerLink="/about">Explore website</a>
+    <hr class="vertical-chain">
+    <a mat-raised-button color="accent" class="chain-button" routerLink="/dashboard">Dashboard</a>
+  </div>
+</div>
+</body>
+</html>

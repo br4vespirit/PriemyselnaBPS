@@ -10,6 +10,11 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatButtonModule} from "@angular/material/button";
 import {MatCardModule} from "@angular/material/card";
+import { WaterSensorComponent } from './components/sensors/water-sensor/water-sensor.component';
+import { MotionSensorComponent } from './components/sensors/motion-sensor/motion-sensor.component';
+import { SoundSensorComponent } from './components/sensors/sound-sensor/sound-sensor.component';
+import { HumidityAndTemperatureSensorComponent } from './components/sensors/humidity-and-temperature-sensor/humidity-and-temperature-sensor.component';
+import { AirQualitySensorComponent } from './components/sensors/air-quality-sensor/air-quality-sensor.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +22,12 @@ import {MatCardModule} from "@angular/material/card";
     HomeComponent,
     AboutComponent,
     DashboardComponent,
-    NavbarComponent
+    NavbarComponent,
+    WaterSensorComponent,
+    MotionSensorComponent,
+    SoundSensorComponent,
+    HumidityAndTemperatureSensorComponent,
+    AirQualitySensorComponent
   ],
   imports: [
     BrowserModule,
