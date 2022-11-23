@@ -1,0 +1,15 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+.page-routing-component {
+  font-size: 20px;
+}
+
+.i-bar {
+  font-size: 1em;
+  margin-left: 20%;
+  margin-right: 15px;
+  /*color: #ff66be;*/
+  color: gold;
+}

@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<app-navbar></app-navbar>
+<div class="app-background">
+  <div class="info-card">
+    <div class="card-spacer"></div>
+    <mat-card class="home-card">
+      <mat-card-title class="home-card-title">
+        About
+      </mat-card-title>
+      <mat-card-content class="home-card-content">
+        <p>On the home page, you may have seen a brief excursion into smart homes and what their benefits are. Now a little information about what this site will do and how to use it.</p>
+        <br>
+        <p>This site is a sensor monitoring system that we use to get data about our environment. The sensors are attached to an Arduino ESP8266, which has a built-in WiFi module that allows us to send data to the BackEnd server and then display it on this page.</p>
+        <br>
+        <p>Apache Tomcat HTTP server, which is used in Spring Boot technology, was chosen as the server. On the website side, Angular is used. The sensors are: water level sensor, motion sensor, gas sensor, sound sensor and others. The data from these sensors will be processed in the Arduino IDE sketch and sent at certain intervals to the server and displayed on the page.</p>
+        <br>
+        <p>After you have read the information how this project was implemented and how the data will be displayed, you can go to the Dashboard tab and observe the information about our sensors.</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="buttons">
+    <div class="spacer"></div>
+    <a mat-raised-button color="accent" class="chain-button" routerLink="/home">Home page</a>
+    <hr class="vertical-chain">
+    <a mat-raised-button color="primary" class="chain-button" routerLink="/about">Explore website</a>
+    <hr class="vertical-chain">
+    <a mat-raised-button color="accent" class="chain-button" routerLink="/dashboard">Dashboard</a>
+  </div>
+</div>
+</body>
+</html>
