@@ -26,7 +26,7 @@ export class HumiditySensorComponent implements OnInit {
         // getting array with temperature
         this.humidity = this.humidity.reverse();
 
-        // array with indexes (y voord)
+        // array with indexes (y coord)
         let _labels: String[] = [];
         for (let i = 0; i < this.humidity.length; i++) {
           _labels.push(String(i));

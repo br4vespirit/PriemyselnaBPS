@@ -28,4 +28,8 @@ export class BackendService {
   public fetchSound(): Observable<any> {
     return this._client.get("http://localhost:8080/api/v1/pbs/sound-sensor", {responseType: "json"});
   }
+
+  public fetchWater(): Observable<any> {
+    return this._client.get("http://localhost:8080/api/v1/pbs/water-sensor", {responseType: "json"});
+  }
 }

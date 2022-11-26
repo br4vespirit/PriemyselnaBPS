@@ -1,0 +1,57 @@
+html, body {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.sensor-background {
+  flex-grow: 1;
+  display: flex;
+}
+
+#divChart{
+  display: block;
+  width: 600px;
+  height: 400px;
+  margin-top: 4%;
+  margin-left: 15%;
+}
+
+#divChart1{
+  display: block;
+  width: 800px;
+  height: 500px;
+  margin-top: 5%;
+  margin-left: 7%;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.vertical-chain {
+  border: 1px solid gray;
+  width: 100px;
+  height: 1px;
+  margin-top: 20%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.chain-button {
+  font-size: 20px;
+  /* centering text in button */
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  /*--------------------------*/
+  border-radius: 8px;
+}

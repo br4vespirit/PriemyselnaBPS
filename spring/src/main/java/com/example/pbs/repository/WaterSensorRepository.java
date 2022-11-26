@@ -10,6 +10,6 @@ import java.util.List;
 @Repository
 public interface WaterSensorRepository extends JpaRepository<WaterSensor, Long> {
 
-    @Query(nativeQuery = true, value = "SELECT * from water_sensor order by id desc limit 20")
+    @Query(nativeQuery = true, value = "SELECT * from water_sensor order by id desc limit 24")
     List<WaterSensor> findTwentyHighest();
 }

@@ -24,6 +24,7 @@ public class WaterSensorController {
                 new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 
+    @CrossOrigin("http://localhost:4200")
     @GetMapping
     public ResponseEntity<List<WaterSensorResponse>> get() {
         return new ResponseEntity<>(waterSensorService.getTopTwenty(), HttpStatus.OK);
