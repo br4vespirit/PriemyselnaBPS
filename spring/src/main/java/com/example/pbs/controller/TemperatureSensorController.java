@@ -25,6 +25,7 @@ public class TemperatureSensorController {
                 new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 
+    @CrossOrigin("http://localhost:4200")
     @GetMapping
     public ResponseEntity<List<TemperatureSensorResponse>> get() {
         return new ResponseEntity<>(temperatureSensorService.getTopTwenty(), HttpStatus.OK);

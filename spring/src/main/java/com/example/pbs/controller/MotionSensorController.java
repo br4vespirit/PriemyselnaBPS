@@ -24,6 +24,7 @@ public class MotionSensorController {
                 new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 
+    @CrossOrigin("http://localhost:4200")
     @GetMapping
     public ResponseEntity<List<MotionSensorResponse>> get() {
         return new ResponseEntity<>(motionSensorService.getTopTwenty(), HttpStatus.OK);

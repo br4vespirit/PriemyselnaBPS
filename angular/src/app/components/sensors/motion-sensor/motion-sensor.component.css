@@ -1,0 +1,62 @@
+html, body {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.app-background {
+  min-height: 100%;
+  flex-grow: 1;
+  background: url("src/assets/img/background-image.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.table {
+  margin-top: 7%;
+  margin-left: 10%;
+  width: 50%;
+}
+
+.motion-table {
+  width: 800px;
+}
+
+.mat-header-cell {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.mat-cell {
+  font-size: 16px;
+}
+
+.buttons {
+  width: 50%;
+  align-items: center;
+}
+
+.chain-button {
+  font-size: 20px;
+  /* centering text in button */
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  /*--------------------------*/
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.spacer {
+  margin-top: 25%;
+}
+
+.vertical-chain {
+  border: 1px solid gray;
+  width: 1px;
+  height: 80px;
+  margin: 15px auto;
+}

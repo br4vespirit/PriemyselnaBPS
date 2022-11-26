@@ -24,6 +24,7 @@ public class HumiditySensorController {
                 new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 
+    @CrossOrigin("http://localhost:4200")
     @GetMapping
     public ResponseEntity<List<HumiditySensorResponse>> get() {
         return new ResponseEntity<>(humiditySensorService.getTopTwenty(), HttpStatus.OK);

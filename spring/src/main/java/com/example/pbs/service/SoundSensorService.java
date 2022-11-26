@@ -27,7 +27,7 @@ public class SoundSensorService {
     }
 
     public List<SoundSensorResponse> getTopTwenty() {
-        return soundSensorRepository.findTwentyHighest()
+        return soundSensorRepository.findAll()
                 .stream()
                 .map(soundSensorMapper::soundSensorToSoundSensorResponse)
                 .collect(Collectors.toList());

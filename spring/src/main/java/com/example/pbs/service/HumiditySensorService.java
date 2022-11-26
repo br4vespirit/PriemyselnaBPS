@@ -27,7 +27,7 @@ public class HumiditySensorService {
     }
 
     public List<HumiditySensorResponse> getTopTwenty() {
-        return humiditySensorRepository.findAll()
+        return humiditySensorRepository.findTwentyHighest()
                 .stream()
                 .map(humiditySensorMapper::humiditySensorToHumiditySensorResponse)
                 .collect(Collectors.toList());

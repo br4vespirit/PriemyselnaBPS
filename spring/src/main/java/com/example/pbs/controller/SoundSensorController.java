@@ -24,6 +24,7 @@ public class SoundSensorController {
                 new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 
+    @CrossOrigin("http://localhost:4200")
     @GetMapping
     public ResponseEntity<List<SoundSensorResponse>> get() {
         return new ResponseEntity<>(soundSensorService.getTopTwenty(), HttpStatus.OK);

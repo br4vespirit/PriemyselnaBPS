@@ -10,6 +10,6 @@ import java.util.List;
 @Repository
 public interface TemperatureSensorRepository extends JpaRepository<TemperatureSensor, Long> {
 
-    @Query(nativeQuery = true, value = "SELECT * from temperature_sensor order by id desc limit 20")
+    @Query(nativeQuery = true, value = "SELECT * from temperature_sensor order by id desc limit 24")
     List<TemperatureSensor> findTwentyHighest();
 }

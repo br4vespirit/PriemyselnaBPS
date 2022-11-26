@@ -27,7 +27,7 @@ public class MotionSensorService {
     }
 
     public List<MotionSensorResponse> getTopTwenty() {
-        return motionSensorRepository.findTwentyHighest()
+        return motionSensorRepository.findAll()
                 .stream()
                 .map(motionSensorMapper::motionSensorToMotionSensorResponse)
                 .collect(Collectors.toList());

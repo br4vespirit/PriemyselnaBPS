@@ -1,1 +1,62 @@
-<p>sound-sensor works!</p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+<app-navbar></app-navbar>
+<div [hidden]="dataLoaded" class="app-background">
+  <div class="table">
+    <mat-table [dataSource]="dataSource" class="mat-elevation-z8 sound-table">
+      <ng-container matColumnDef="value">
+        <mat-header-cell *matHeaderCellDef> Value </mat-header-cell>
+        <mat-cell *matCellDef="let sound"> {{sound.value}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="year">
+        <mat-header-cell *matHeaderCellDef> Year </mat-header-cell>
+        <mat-cell *matCellDef="let sound"> {{sound.year}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="month">
+        <mat-header-cell *matHeaderCellDef> Month </mat-header-cell>
+        <mat-cell *matCellDef="let sound"> {{sound.month}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="day">
+        <mat-header-cell *matHeaderCellDef> Day </mat-header-cell>
+        <mat-cell *matCellDef="let sound"> {{sound.day}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="hour">
+        <mat-header-cell *matHeaderCellDef> Hour </mat-header-cell>
+        <mat-cell *matCellDef="let sound"> {{sound.hour}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="minute">
+        <mat-header-cell *matHeaderCellDef> Minute </mat-header-cell>
+        <mat-cell *matCellDef="let sound"> {{sound.minute}} </mat-cell>
+      </ng-container>
+
+      <ng-container matColumnDef="second">
+        <mat-header-cell *matHeaderCellDef> Second </mat-header-cell>
+        <mat-cell *matCellDef="let sound"> {{sound.second}} </mat-cell>
+      </ng-container>
+
+      <mat-header-row *matHeaderRowDef="columns"></mat-header-row>
+      <mat-row *matRowDef="let row; columns: columns;"></mat-row>
+    </mat-table>
+    <mat-paginator #paginator [pageSizeOptions]="[10]" showFirstLastButtons class="mat-elevation-z8"
+                   style="width: 800px"></mat-paginator>
+  </div>
+  <div class="buttons">
+    <div class="spacer"></div>
+    <a mat-raised-button color="accent" class="chain-button" routerLink="/home">Home page</a>
+    <hr class="vertical-chain">
+    <a mat-raised-button color="primary" class="chain-button" routerLink="/about">Explore website</a>
+    <hr class="vertical-chain">
+    <a mat-raised-button color="accent" class="chain-button" routerLink="/dashboard">Dashboard</a>
+  </div>
+</div>
+</body>
+</html>

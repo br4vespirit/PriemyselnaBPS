@@ -15,6 +15,9 @@ import { MotionSensorComponent } from './components/sensors/motion-sensor/motion
 import { SoundSensorComponent } from './components/sensors/sound-sensor/sound-sensor.component';
 import { TemperatureSensorComponent } from './components/sensors/temperature-sensor/temperature-sensor.component';
 import { HumiditySensorComponent } from './components/sensors/humidity-sensor/humidity-sensor.component';
+import { HttpClientModule } from '@angular/common/http';
+import {MatTableModule} from "@angular/material/table";
+import {MatPaginatorModule} from "@angular/material/paginator";
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { HumiditySensorComponent } from './components/sensors/humidity-sensor/hu
     AppRoutingModule,
     MatToolbarModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule,
+    MatTableModule,
+    MatPaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,6 +10,6 @@ import java.util.List;
 @Repository
 public interface HumiditySensorRepository extends JpaRepository<HumiditySensor, Long> {
 
-    @Query(nativeQuery = true, value = "SELECT * from humidity_sensor order by id desc limit 20")
+    @Query(nativeQuery = true, value = "SELECT * from humidity_sensor order by id desc limit 24")
     List<HumiditySensor> findTwentyHighest();
 }
