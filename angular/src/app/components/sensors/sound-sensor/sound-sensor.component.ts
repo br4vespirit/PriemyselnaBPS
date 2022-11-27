@@ -19,7 +19,7 @@ export class SoundSensorComponent implements OnInit {
   soundParsed: SoundDto[] = [];
   dataLoaded = false;
 
-  columns = ["value", "year", "month", "day", "hour", "minute", "second"];
+  columns = ["year", "month", "day", "hour", "minute", "second"];
 
   // @ts-ignore
   dataSource: MatTableDataSource<SoundDto>;

@@ -8,10 +8,6 @@
 <div [hidden]="dataLoaded" class="app-background">
   <div class="table">
     <mat-table [dataSource]="dataSource" class="mat-elevation-z8 sound-table">
-      <ng-container matColumnDef="value">
-        <mat-header-cell *matHeaderCellDef> Value </mat-header-cell>
-        <mat-cell *matCellDef="let sound"> {{sound.value}} </mat-cell>
-      </ng-container>
 
       <ng-container matColumnDef="year">
         <mat-header-cell *matHeaderCellDef> Year </mat-header-cell>
